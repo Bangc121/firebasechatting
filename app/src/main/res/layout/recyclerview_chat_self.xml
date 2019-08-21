@@ -13,13 +13,14 @@
             android:id="@+id/selfMessageBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:padding="4dp">
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/selfName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:layout_marginRight="7dp"
                 tools:text="이름" />
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/selfContents"

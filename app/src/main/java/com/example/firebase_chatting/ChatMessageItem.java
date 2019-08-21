@@ -1,9 +1,5 @@
 package com.example.firebase_chatting;
 
-/**
- * Created by KimJeongHwan on 2018-11-19.
- */
-
 public class ChatMessageItem {
     private String name;
     private String contents;

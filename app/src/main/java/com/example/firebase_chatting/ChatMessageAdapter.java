@@ -15,11 +15,6 @@ import com.example.firebase_chatting.bases.Constants;
 
 import java.util.ArrayList;
 
-
-/**
- * Created by KimJeongHwan on 2018-11-19.
- */
-
 public class ChatMessageAdapter extends RecyclerView.Adapter<ChatMessageAdapter.ViewHolder> {
     private static final int NOTICE_VIEW = 0;
     private static final int SELF_VIEW = 1;
@@ -106,7 +101,6 @@ public class ChatMessageAdapter extends RecyclerView.Adapter<ChatMessageAdapter.
     @Override
     public void onBindViewHolder(@NonNull ChatMessageAdapter.ViewHolder holder, int position) {
         int viewType = getItemViewType(position);
-        Log.d("ChatMessageAdapter", "onBindViewHolder position(" + position + ")");
         if (viewType == NOTICE_VIEW) {
             NoticeHolder noticeHolder = (NoticeHolder) holder;
             noticeHolder.chatNotice.setText(chatMessageItems.get(position).getNotice());
